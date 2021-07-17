@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Huan's Personal Page</title>
+    <meta charset="UTF-16">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script defer src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div>
+
+        <div class="top">
+          <div class="about-me">
+            <h2 class="white-word">ABOUT ME</h2>
+            <p>HUAN-TING CHEN &nbsp&nbsp&nbsp 30 Years Old</p>
+            <p>Hello! I'm Huan, welcome to my personal page, which built in HTML/CSS/JavaScript by myself. Keep-learning for me is not for succeeding, but for living. </p>
+            <button class="button">CONTACT</button>
+          </div>
+          <div class="picture">
+            <img src="imgs/self.jpg"/>
+          </div>
+          <div class="education">
+            <h2 class="white-word">EDUCATION</h2>
+            <p>National Taiwan University (NTU), Taipei, Taiwan <br>BS, Psychology<br>University of Manchester, Manchester, UK<br>MSc, Urban Design and International Planning</p>
+          </div>
+        </div>
+
+        <div style="background-color:#1E2233; height:3px; width:auto; display: flex; justify-content: center; align-items: center;">
+          <div style="background-color:#bebebe; height:1px; width:1234px;"></div>
+        </div>
+
+        <div class="tab">
+          <div class="exp-tab"  onclick="click_exp_tab()">Experience</div>
+          <div class="ability-tab" onclick="click_ability_tab()">Ability</div>
+          <div class="projects-tab" onclick="click_projects_tab()">Projects</div>
+        </div>
+
+        <div class="slider">
+          <div id="exp">exp slider</div>
+          <div id="ability">ability slider</div>
+          <div id="projects">pro slider</div>
+          <button class="pre-btn" onclick="go_pre()"><</button>
+          <button class="nxt-btn" onclick="go_nxt()">></button>
+        </div>
+
+
+      </div>
+  </body>
+     
+  
+</html>
+
+
