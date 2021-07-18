@@ -67,8 +67,14 @@ function hidePre_Nxt_Button(slideButton){
     };
 }
 */
-function go_pre(){}
-function go_nxt(){}
+function go_pre(){
+    currentIndex-=1;
+    slide(items);
+}
+function go_nxt(){
+    currentIndex+=1;
+    slide(items);
+}
 
 
 slide(items);

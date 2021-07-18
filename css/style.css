@@ -22,7 +22,7 @@ html{
     font-weight: lighter;
 }
 .about-me p{
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 .white-word{
     color: rgb(255, 255, 255);
@@ -36,8 +36,8 @@ html{
     color: #F9AD3D;
     padding: 3px;
     border-radius: 3px;
-    margin: 0px;
-    font-size: 8px;
+    margin-top: 4px;
+    font-size: 7px;
 }
 
 
@@ -86,7 +86,7 @@ html{
 .exp-tab, .ability-tab, .projects-tab{
     width: 120px;
     height: 33px;
-    margin: 18px 0px 18px 0px;
+    margin: 33px 0px 18px 0px;
     text-align: center;
     padding-top: 5px;;
     color: #E4E4E4;
@@ -122,7 +122,9 @@ html{
 }
 
 .exp{
-    background-color: #2b1e33;
+    background-color: #1E2233;
+    position: relative;
+    letter-spacing:1px;
     /*display: flex;
     justify-content: flex-end;
     align-items: flex-start;*/
@@ -130,20 +132,42 @@ html{
 .exp .story{
     /*flex: none;*/
     display: inline-block;
+    position: absolute;
 
-    max-width: 220px;
-    height: auto;
+    width: 150px;
+    height: 58px;
     background-color: #1E2233;
     border: 1px solid #F9AD3D;
-    color: #E4E4E4;
+    color: #e4e4e400;
     font-size: 11px;
     font-weight: lighter;
     text-align: unset;
-    padding: 20px;
+    padding: 18px;
+    left:130px;
+    top:50px;
+    overflow: hidden;
+    cursor: pointer;
+
+    -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out 0.5s;
+    transition: width 0.3s ease-in-out,height 0.3s ease-in-out 0.5s;
 }
+.exp .story:hover{
+    width: 250px;
+    height: 310px;
+    color: #E4E4E4;
+}
+.exp .story .gg-add{
+    right:20px;
+    display: inline-block; 
+    position: absolute; 
+    color: #F9AD3D;
+}
+
+
 .exp .job{
     /*flex: none;*/
     display: inline-block;
+    position: absolute;
 
     max-width: 25%;
     height: 300px;
@@ -152,30 +176,121 @@ html{
     font-size: 11px;
     font-weight: lighter;
     text-align: right;
+    right:600px;
+    top:50px;
 }
 .big-white-word{
     color: rgb(255, 255, 255);
     font-size: 20px;
 }
+.exp .job-description{
+    /*flex: none;*/
+    display: inline-block;
+    position: absolute;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    max-width: 530px;
+    height: 300px;
+    background-color: #1E2233;
+    color: #E4E4E4;
+    font-size: 11px;
+    font-weight: lighter;
+    right:30px;
+    top:48px;
+}
 
 .ability{
-    background-color: rgb(0, 255, 64);
+    background-color: #1E2233;
+    position: relative;
+    letter-spacing:1px;
 }
+
+.ability .rating-content{
+    display: inline-block;
+    position: absolute;
+    left: 180px;
+    top:25px;
+    background-color: #1E2233;
+    width:525px;
+    height: 400px;
+    color: #E4E4E4;
+    font-size: 13px;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.ability .rating{
+    display: inline-block;
+    position: absolute;
+
+    color: #F9AD3D;
+    background-color: #1E2233;
+    margin-bottom: 15px;
+    right:1px;
+}
+.ability p{
+    display: inline-block;
+
+    margin-bottom: 4px;
+}
+
+
+
+
+
+.ability .skills{
+    display: inline-block;
+    position: absolute;
+
+    width: 150px;
+    height: 58px;
+    background-color: #1E2233;
+    border: 1px solid #F9AD3D;
+    color: #e4e4e400;
+    font-size: 11px;
+    font-weight: lighter;
+    text-align: unset;
+    padding: 18px;
+    right:180px;
+    top:35px;
+    overflow: hidden;
+    cursor: pointer;
+
+    -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out 0.5s;
+    transition: width 0.3s ease-in-out,height 0.3s ease-in-out 0.5s;
+}
+.ability .skills:hover{
+    width: 250px;
+    height: 310px;
+    color: #E4E4E4;
+}
+.ability .skills .gg-add{
+    right:20px;
+    display: inline-block; 
+    position: absolute; 
+    color: #F9AD3D;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .projects{
     background-color: #F9AD3D;
 }
