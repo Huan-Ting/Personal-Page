@@ -1,4 +1,4 @@
-let items=document.querySelectorAll(".slider div");
+let items=document.querySelectorAll(".a-slider");
 let tabs=document.querySelectorAll(".tab div");
 
 
