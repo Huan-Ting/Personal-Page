@@ -343,7 +343,7 @@ html{
     border: 1px solid #F36439;
 }
 .bars{
-    width: 200px;
+    width: 400px;
     background-color: burlywood;
     display: inline-block;
     transform: translate(150px, 250px);
