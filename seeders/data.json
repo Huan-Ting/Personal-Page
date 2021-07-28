@@ -1,0 +1,41 @@
+{
+    "items":[
+    {
+        "name":"Factory ERP system",            
+        "infoarch":90,
+        "perceptdesign": 10,
+        "description":""
+        },
+    {
+        "name":"Network Operation Center (Intranet Security)",            
+        "infoarch":80,
+        "perceptdesign": 20,
+        "description":""
+        },
+    {
+        "name":"Communication management systems (for Hospital)",            
+        "infoarch":60,
+        "perceptdesign": 40,
+        "description":""
+        },
+    {
+        "name":"Drone Remote-Control App",            
+        "infoarch":40,
+        "perceptdesign": 60,
+        "description":""
+        },
+    {
+        "name":"Network Operation Center (Intranet Security)",            
+        "infoarch":80,
+        "perceptdesign": 20,
+        "description":""
+        },
+    {
+        "name":"E-commerce of Nutritional Supplements",            
+        "infoarch":30,
+        "perceptdesign": 70,
+        "description":""
+        }
+    ]
+}
+

@@ -79,3 +79,61 @@ function go_nxt(){
 
 slide(items);
 
+
+//Projects
+function readJSONFile(file) {
+    fetch(file).then(response => {
+        return response.json();
+    }).then(data => {
+        totalitems= data.items;
+        renderProjects(totalitems);
+    });
+}
+readJSONFile("./seeders/data.json")
+
+
+
+let projectList_html=document.querySelectorAll(".list");
+let bars_html=document.querySelectorAll(".bars");
+
+function renderProjects(){
+    let i=0;
+    totalitems.forEach(function(project){
+        projectList_html[0].innerHTML+=`<div class="p-name" data-id="${i}"><p>${project.name}</P></div>`;
+
+        i++;
+    });
+
+    
+
+}
+
+
+window.onload = function () {
+    let pro_list=document.getElementsByClassName("p-name");
+    for(let i= 0;i<pro_list.length;i++){
+        $(`.p-name:eq(${i})`).hover(
+            function() {
+                projectHover(i);
+            }, function() {
+                bars_html[0].innerHTML="";
+            }
+          );
+       
+    }
+}
+
+
+function projectHover(i){
+    bars_html[0].innerHTML="";
+    bars_html[0].innerHTML+=
+        `
+        <div class="p-bars" data-id="">
+            <p>Information Architecture:</P>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width:${totalitems[i].infoarch}%;" aria-valuenow="${totalitems[i].infoarch}" aria-valuemin="0" aria-valuemax="100">${totalitems[i].infoarch}%</div>
+            </div>
+            <p>Perception Design: ${totalitems[i].perceptdesign}</P>
+        </div>
+        `;
+}

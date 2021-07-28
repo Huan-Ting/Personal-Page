@@ -112,13 +112,13 @@ html{
 .slider{
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 430px;
     
 }
 .exp, .ability, .projects{
     /*position: absolute;*/
     width: 100%;
-    height: 400px;
+    height: 100%;
 }
 
 .exp{
@@ -233,10 +233,6 @@ html{
     margin-bottom: 4px;
 }
 
-
-
-
-
 .ability .skills{
     display: inline-block;
     position: absolute;
@@ -292,7 +288,65 @@ html{
 
 
 .projects{
-    background-color: #F9AD3D;
+    background-color: #5f5e5d;
+}
+
+.list{
+    display: flex;
+    position: absolute;
+    top:30px;
+    justify-content: center;
+    width:100% ;
+    height: 150px;
+    top:30px;
+    margin: 0px auto 10px auto ;
+}
+.p-name{
+    width: 160px;
+    height: 150px;
+    margin: 8px;
+    padding: 0px;
+    text-align: center;
+    border-radius: 2px;
+    font-weight: 200;
+    font-size: 15px;
+    position: relative;
+}
+.p-name p{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-5%, -50%);
+}
+.p-name:nth-child(1){
+    color: #FFFFDC;
+    border: 1px solid #FFFFDC;
+}
+.p-name:nth-child(2){
+    color: #F7BF86;
+    border: 1px solid #F7BF86;
+}
+.p-name:nth-child(3){
+    color: #F9C43F;
+    border: 1px solid #F9C43F;
+}
+.p-name:nth-child(4){
+    color: #EC885A;
+    border: 1px solid #EC885A;
+}
+.p-name:nth-child(5){
+    color: #C34C2C;
+    border: 1px solid #C34C2C;
+}
+.p-name:nth-child(6){
+    color: #F36439;
+    border: 1px solid #F36439;
+}
+.bars{
+    width: 200px;
+    background-color: burlywood;
+    display: inline-block;
+    transform: translate(150px, 250px);
 }
 
 
@@ -339,5 +393,7 @@ html{
     transform: translateX(20%);
     /*transform: translate(0%,0);*/
 }
+
+
 
 
