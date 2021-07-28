@@ -343,10 +343,12 @@ html{
     border: 1px solid #F36439;
 }
 .bars{
-    width: 400px;
-    background-color: burlywood;
+    width: 40%;
+    color: #E4E4E4;
     display: inline-block;
-    transform: translate(150px, 250px);
+    transform: translate(25%, 285%);
+    line-height: 7px;
+    
 }
 
 

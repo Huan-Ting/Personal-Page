@@ -101,7 +101,7 @@ function renderProjects(){
     totalitems.forEach(function(project){
         projectList_html[0].innerHTML+=`<div class="p-name"><p>${project.name}</P></div>`;
     });
-
+    notYetHover();
     interaction();
     
     
@@ -110,37 +110,52 @@ function renderProjects(){
 
 function interaction(){
     let pro_list=document.getElementsByClassName("p-name");
-    console.log(pro_list);
-    window.onload = function () {
-        
-        for(let i= 0;i<pro_list.length;i++){
+      
+    for(let i= 0;i<pro_list.length;i++){
             $(`.p-name:eq(${i})`).hover(
                 function() {
-                    console.log("hovered");
+                    
                     projectHover(i);
                 }, function() {
-                    bars_html[0].innerHTML="";
+                    notYetHover();
                 }
             );
         
-        };
-    }
+    };  
+}
 
-    function projectHover(i){
-        bars_html[0].innerHTML="";
-        bars_html[0].innerHTML+=
-            `
-            <div class="p-bars" data-id="">
-                <p>Information Architecture:</P>
-                <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width:${totalitems[i].infoarch}%;" aria-valuenow="${totalitems[i].infoarch}" aria-valuemin="0" aria-valuemax="100">${totalitems[i].infoarch}%</div>
-                </div>
-                <p>Perception Design:</P>
-                <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width:${totalitems[i].perceptdesign}%;" aria-valuenow="${totalitems[i].perceptdesign}" aria-valuemin="0" aria-valuemax="100">${totalitems[i].perceptdesign}%</div>
-                </div>
+
+function projectHover(i){
+    bars_html[0].innerHTML="";
+    bars_html[0].innerHTML+=
+        `
+        <div class="p-bars" data-id="">
+            <p>Information Architecture:</P>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width:${totalitems[i].infoarch}%;" aria-valuenow="${totalitems[i].infoarch}" aria-valuemin="0" aria-valuemax="100">${totalitems[i].infoarch}%</div>
+            </div><br><br>
+            <p>Perception Design:</P>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width:${totalitems[i].perceptdesign}%;" aria-valuenow="${totalitems[i].perceptdesign}" aria-valuemin="0" aria-valuemax="100">${totalitems[i].perceptdesign}%</div>
             </div>
-            `;
-    };
+        </div>
+        `;
+};
+
+function notYetHover(){
+    bars_html[0].innerHTML="";
+                bars_html[0].innerHTML+=
+                `
+                <div>
+                    <p>Information Architecture:</P>
+                    <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width:0%;"  aria-valuemin="0" aria-valuemax="100">0%</div>
+                    </div><br><br>
+                    <p>Perception Design:</P>
+                    <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width:0%;"  aria-valuemin="0" aria-valuemax="100">0%</div>
+                    </div>
+                </div>
+                `;
 }
 
