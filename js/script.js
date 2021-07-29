@@ -126,17 +126,18 @@ function interaction(){
 
 
 function projectHover(i){
+    let color=['#FFFFDC','#F7BF86','#F9C43F','#EC885A','#C34C2C','#F36439' ];
     bars_html[0].innerHTML="";
     bars_html[0].innerHTML+=
         `
         <div class="p-bars" data-id="">
             <p>Information Architecture:</P>
-            <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width:${totalitems[i].infoarch}%;" aria-valuenow="${totalitems[i].infoarch}" aria-valuemin="0" aria-valuemax="100">${totalitems[i].infoarch}%</div>
+            <div class="progress" style="background-color:#404A71;">
+            <div class="progress-bar" role="progressbar" style="width:${totalitems[i].infoarch}%; background-color:${color[i]}; color:#404A71;" aria-valuenow="${totalitems[i].infoarch}" aria-valuemin="0" aria-valuemax="100">${totalitems[i].infoarch}%</div>
             </div><br><br>
             <p>Perception Design:</P>
-            <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width:${totalitems[i].perceptdesign}%;" aria-valuenow="${totalitems[i].perceptdesign}" aria-valuemin="0" aria-valuemax="100">${totalitems[i].perceptdesign}%</div>
+            <div class="progress" style="background-color:#404A71;">
+            <div class="progress-bar" role="progressbar" style="width:${totalitems[i].perceptdesign}%;  background-color:${color[i]}; color:#404A71;" aria-valuenow="${totalitems[i].perceptdesign}" aria-valuemin="0" aria-valuemax="100">${totalitems[i].perceptdesign}%</div>
             </div>
         </div>
         `;
@@ -148,11 +149,11 @@ function notYetHover(){
                 `
                 <div>
                     <p>Information Architecture:</P>
-                    <div class="progress">
+                    <div class="progress" style="background-color:#404A71;">
                     <div class="progress-bar" role="progressbar" style="width:0%;"  aria-valuemin="0" aria-valuemax="100">0%</div>
                     </div><br><br>
                     <p>Perception Design:</P>
-                    <div class="progress">
+                    <div class="progress" style="background-color:#404A71;">
                     <div class="progress-bar" role="progressbar" style="width:0%;"  aria-valuemin="0" aria-valuemax="100">0%</div>
                     </div>
                 </div>
