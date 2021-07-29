@@ -18,7 +18,7 @@ html{
     flex:auto;
     height:100%;
     padding:30px 0px 3px 30px;  
-    font-size: 12px;
+    font-size: 14px;
     font-weight: lighter;
 }
 .about-me p{
@@ -51,8 +51,8 @@ html{
 
 .picture img{
     display: block;
-    width: 125px;
-    height:125px;
+    width: 130px;
+    height:130px;
     border-radius: 50%;
     margin: 35px 68px 35px 68px;
     border: 2px solid #E4E4E4;
@@ -67,7 +67,7 @@ html{
     
     height:100%;
     padding:30px 30px 3px 0px;  
-    font-size: 11px;
+    font-size: 14px;
     font-weight: lighter;
     text-align: right;
 }
@@ -84,13 +84,14 @@ html{
 }
 
 .exp-tab, .ability-tab, .projects-tab{
-    width: 120px;
-    height: 33px;
-    margin: 33px 0px 18px 0px;
+    width: 129px;
+    height: 40px;
+    margin: 40px 0px 23px 0px;
     text-align: center;
     padding-top: 5px;;
     color: #E4E4E4;
     cursor: pointer;
+    font-size: 19px;
 }
 
 .exp-tab{
@@ -133,13 +134,12 @@ html{
     /*flex: none;*/
     display: inline-block;
     position: absolute;
-
     width: 150px;
     height: 58px;
     background-color: #1E2233;
     border: 1px solid #F9AD3D;
     color: #e4e4e400;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: lighter;
     text-align: unset;
     padding: 18px;
@@ -153,7 +153,7 @@ html{
 }
 .exp .story:hover{
     width: 250px;
-    height: 310px;
+    height: 330px;
     color: #E4E4E4;
 }
 .exp .story .gg-add{
@@ -168,20 +168,20 @@ html{
     /*flex: none;*/
     display: inline-block;
     position: absolute;
-
     max-width: 25%;
     height: 300px;
     background-color: #1E2233;
     color: #E4E4E4;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: lighter;
     text-align: right;
     right:600px;
     top:50px;
+    line-height: 20px;
 }
 .big-white-word{
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 23px;
 }
 .exp .job-description{
     /*flex: none;*/
@@ -192,7 +192,7 @@ html{
     height: 300px;
     background-color: #1E2233;
     color: #E4E4E4;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: lighter;
     right:30px;
     top:48px;
