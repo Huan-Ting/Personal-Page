@@ -6,6 +6,7 @@ html{
     width: 100%;
     height: 200px ;
     display: flex;
+    flex-wrap: wrap;
     color: #E4E4E4;
     background-color: #1E2233;
     justify-content: center;
@@ -15,14 +16,14 @@ html{
 
 
 .about-me{
-    flex:auto;
+    max-width: 400px;
     height:100%;
     padding:30px 0px 3px 30px;  
     font-size: 14px;
     font-weight: lighter;
 }
 .about-me p{
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 .white-word{
     color: rgb(255, 255, 255);
@@ -36,17 +37,16 @@ html{
     color: #F9AD3D;
     padding: 3px;
     border-radius: 3px;
-    margin-top: 4px;
+    margin-top: 7px;
     font-size: 7px;
 }
 
 
 
 .picture{
-    max-width: 300px;
+    flex:auto;
     height:100%;
     background-color: #1E2233;
-    text-align: center;
 }
 
 .picture img{
@@ -54,16 +54,13 @@ html{
     width: 130px;
     height:130px;
     border-radius: 50%;
-    margin: 35px 68px 35px 68px;
     border: 2px solid #E4E4E4;
+    margin: 7% 0% 0% 32%;
 
 }
 
-
-
-
 .education{
-    flex:auto;
+    max-width: 400px;
     
     height:100%;
     padding:30px 30px 3px 0px;  
@@ -294,6 +291,7 @@ html{
 
 .list{
     display: flex;
+    flex-wrap: wrap;
     position: absolute;
     top:30px;
     justify-content: center;
@@ -396,6 +394,8 @@ html{
 
 
 
+
+
 .slider button{
     background-color: #2F385D;
     width: 30px;
@@ -426,6 +426,154 @@ html{
     bottom: 160px;
     transform: translateX(20%);
     /*transform: translate(0%,0);*/
+}
+
+
+
+
+
+
+@media screen and (max-width : 1024px) {
+    .top{
+        height: auto ;
+        display:block;
+        justify-content:space-around;
+        align-items:stretch;    
+    }
+
+    .about-me{
+        width: 750px;
+        font-size: 15px;
+    }
+    .education{
+        position: absolute;
+        max-width: 750px;
+        height: auto;
+        right: 0px;
+        top:0px;
+        font-size: 15px;
+    }
+    .picture{
+        position: absolute;
+        top:220px;
+        height: auto;
+        width: 100%;
+    }
+    .picture img{
+        position:relative;
+        margin: 0% 0% 0% 43%;
+    
+    }
+    .exp-tab, .ability-tab, .projects-tab{
+        margin: 190px 0px 23px 0px;
+        padding-top: 5px;
+        font-size: 17px;
+    }
+    .exp .story{
+        position: absolute;
+        left:100px;
+        top:500px;
+    }
+    .exp .job{
+        display: inline-block;
+        width: 200px;
+        height: 300px;
+        font-size: 16px;
+        font-weight: lighter;
+        text-align: right;
+        left:100px;
+        top:50px;
+        line-height: 28px;
+        margin: 0px;
+    }
+    .exp .job-description{
+        display: inline-block;
+        max-width:600px;
+        height: 300px;
+        font-size: 16px;
+        font-weight: lighter;
+        right:80px;
+        top:48px;
+        margin: 0px;
+    }
+    .ability .skills{
+        right:100px;
+        top:430px;
+    }
+    .ability .rating-content{
+        left: 150px;
+        top:30px;
+        font-size: 14px;
+    }
+    
+    .ability .rating{
+        margin-bottom: 15px;
+        right:40px;
+    }
+    .list{
+        width: 75%;
+        margin-left: 12%;
+    }
+    .p-name{
+        width: 220px;
+        height: 150px;
+        margin: 12px;
+        font-size: 17px;
+    }
+    .bars{
+        transform: translate(46%, 480%);
+        line-height: 7px;  
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .exp .job{
+        display: inline-block;
+        width: 200px;
+        height: 300px;
+        font-size: 16px;
+        font-weight: lighter;
+        text-align: right;
+        left:30px;
+        top:53px;
+        line-height: 31px;
+        margin: 0px;
+    }
+    .exp .job-description{
+        display: inline-block;
+        max-width:440px;
+        height: 300px;
+        font-size: 15px;
+        font-weight: lighter;
+        right:80px;
+        top:48px;
+        margin: 0px;
+    }
+    .exp .story{
+        position: absolute;
+        left:70px;
+        top:550px;
+    }
+    .list{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .p-name{
+        width: 190px;
+        height: 150px;
+        margin: 8px;
+        font-size: 17px;
+    }
+    .bars{
+        transform: translate(30%, 465%);
+        line-height: 7px;  
+    }
+}
+
+@media screen and (max-width:430px) {
+    html,body{ 
+        display: none; 
+    } 
 }
 
 

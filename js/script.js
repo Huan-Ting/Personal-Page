@@ -160,3 +160,13 @@ function notYetHover(){
                 `;
 }
 
+
+
+
+
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    alert('Please visit this website by devices with larger screen.');
+    getElementById('body').style.display = 'none';
+}
+
